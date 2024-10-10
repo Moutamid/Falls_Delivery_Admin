@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Falls Delivery Admin</string>
+    <string name="marula_cafe">Marula Cafe</string>
+    <string name="falls_pharmacy">Falls Pharmacy</string>
+    <string name="delivery_orders">Delivery Orders</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iusto libero nesciunt omnis quaerat, quia.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
