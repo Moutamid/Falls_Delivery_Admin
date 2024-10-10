@@ -31,6 +31,7 @@
         android:layout_marginHorizontal="12dp"
         app:cursorColor="@color/orange"
         app:hintTextColor="@color/orange"
+        android:textColorHint="@color/grey"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp">
 

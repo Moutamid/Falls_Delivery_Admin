@@ -27,6 +27,7 @@
         app:boxStrokeWidthFocused="0dp"
         app:cursorColor="@color/orange"
         app:hintTextColor="@color/orange"
+        android:textColorHint="@color/grey"
         app:startIconDrawable="@drawable/magnifying_glass_solid"
         app:startIconTint="@color/grey">
 

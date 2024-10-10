@@ -54,6 +54,7 @@
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
                 app:cursorColor="@color/orange"
+                android:textColorHint="@color/grey"
                 app:hintTextColor="@color/orange">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -73,6 +74,7 @@
                 app:boxBackgroundColor="@color/black2"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
+                android:textColorHint="@color/grey"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
                 app:boxStrokeWidth="0dp"
@@ -95,6 +97,7 @@
                 android:layout_height="100dp"
                 android:hint="Description"
                 android:layout_marginTop="10dp"
+                android:textColorHint="@color/grey"
                 app:boxBackgroundColor="@color/black2"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
@@ -126,6 +129,7 @@
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
                 app:boxStrokeWidth="0dp"
+                android:textColorHint="@color/grey"
                 app:boxStrokeWidthFocused="0dp"
                 app:cursorColor="@color/orange"
                 app:hintTextColor="@color/orange">
