@@ -8,6 +8,7 @@ import android.view.Window;
 
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -32,6 +33,8 @@ public class Constants {
     public static final String RESTAURANT_CATEGORY = "RESTAURANT_CATEGORY";
     public static final String PHARMACY_CATEGORY = "PHARMACY_CATEGORY";
     public static final String PHARMACY = "PHARMACY";
+    public static final String USER = "USER";
+    public static final String STASH_USER = "STASH_USER";
 
     public static void initDialog(Context context) {
         dialog = new Dialog(context);
@@ -104,6 +107,11 @@ public class Constants {
             }
 
         }).start();
+    }
+
+
+    public static FirebaseAuth auth() {
+        return FirebaseAuth.getInstance();
     }
 
     public static DatabaseReference databaseReference() {

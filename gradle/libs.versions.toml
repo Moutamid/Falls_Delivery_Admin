@@ -1,6 +1,8 @@
 [versions]
 agp = "8.5.2"
 glide = "4.16.0"
+googleApiClient = "1.32.1"
+googleAuthLibraryOauth2Http = "1.18.0"
 imagepicker = "v2.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,9 +12,14 @@ material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 stash = "1c45b0e5d5"
+volley = "1.2.1"
+playServicesLocation = "21.3.0"
+playServicesMaps = "19.0.0"
 
 [libraries]
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+google-api-client = { module = "com.google.api-client:google-api-client", version.ref = "googleApiClient" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
 imagepicker = { module = "com.github.Dhaval2404:ImagePicker", version.ref = "imagepicker" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -22,6 +29,9 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 stash = { module = "com.github.akshay2211:Stash", version.ref = "stash" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

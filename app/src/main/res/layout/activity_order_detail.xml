@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.OrderDetailActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Details"
+                android:layout_marginTop="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/black2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name:"/>
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/app_name"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number:"/>
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="XYZ Bank"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address:"/>
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/lorem"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Details"
+                android:layout_marginTop="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/black2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Name:"/>
+
+                        <TextView
+                            android:id="@+id/productName"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/app_name"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity:"/>
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="XYZ Bank"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit Price:"/>
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="$10.00"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SubTotal:"/>
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="10dp"
+                            tools:text="$20.00"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash on delivery:"/>
+
+                        <TextView
+                            android:id="@+id/cod"
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:layout_marginStart="10dp"
+                            android:text="Yes"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Proof"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:id="@+id/proof" />
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Complete Order" />
+
+            <Button
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Order"
+                android:textColor="@color/red"
+                android:layout_marginTop="10dp"
+                android:id="@+id/delete" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.moutamid.fallsdeliveryadmin.ui.LoginActivity;
 import com.moutamid.fallsdeliveryadmin.utilis.Constants;
 
 public class SplashActivity extends AppCompatActivity {

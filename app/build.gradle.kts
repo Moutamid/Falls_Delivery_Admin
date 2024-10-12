@@ -27,6 +27,13 @@ android {
             )
         }
     }
+
+    packaging {
+        resources {
+            excludes += "META-INF/DEPENDENCIES"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -38,11 +45,21 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.imagepicker)
 
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
+
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-database")
     implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-crashlytics")
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging")
+
+    implementation(libs.google.api.client)
+    implementation(libs.google.auth.library.oauth2.http)
+
+    implementation(libs.volley)
 
     implementation(libs.appcompat)
     implementation(libs.material)
